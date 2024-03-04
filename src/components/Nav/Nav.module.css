@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "get_schwifty";
+    src: url(./../../resources/get_schwifty.ttf);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    position: fixed;
+    padding-left: 15px;
+    top: 0px;
+    opacity: 90%;
+    z-index: 1;
+
+    
+}
+
+.navImg {
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    width: 15%;
+    height: 80px;
+}
+
+.btn{ 
+    width: 100%;
+    margin: 1px;
+    background-color: rgb(25, 25, 25);
+    font-family: "get_schwifty";
+    font-size: 25px;
+    color:#03af00;
+    border: none;
+    cursor: pointer;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+    &:hover{
+        background-color: rgb(53, 53, 53); 
+    }
+}
+
+

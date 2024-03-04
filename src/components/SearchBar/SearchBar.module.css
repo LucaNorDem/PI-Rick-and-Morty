@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "get_schwifty";
+    src: url(./../../resources/get_schwifty.ttf);
+}
+.SBDiv{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.SBDiv input{
+    margin: 2px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.button{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(25, 25, 25);;
+    background-image: url(./../../resources/RickMortyPortal-fijo.gif);
+    background-size: 100px 50px;    
+    margin: 2px;
+    font-family: "get_schwifty";
+    font-size: 25px;
+    color:#03af00;
+    border: none;
+    cursor: pointer;
+    opacity: 60%;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+    &:hover{
+        background-image: url(./../../resources/RickMortyPortal.gif);
+        opacity: 100%;
+    }
+    
+}
+
+
+

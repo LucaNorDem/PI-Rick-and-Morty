@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "get_schwifty";
+    src: url(./../../resources/get_schwifty.ttf);
+}
+
+.aboutDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 20px;
+    color:rgb(21, 112, 21);
+    font-family: "get_schwifty";
+    font-size: 50px;
+    text-shadow: 
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
