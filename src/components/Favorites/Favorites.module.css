@@ -1,0 +1,6 @@
+.FavoritesDiv {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin-top: 100px;
+}

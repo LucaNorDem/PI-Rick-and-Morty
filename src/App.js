@@ -3,12 +3,33 @@ import Nav from './components/Nav/Nav.jsx';
 import axios from "axios";
 import About from './components/About/About.jsx';
 import Detail from './components/Detail/Detail.jsx';
-import { useState } from 'react';
-import {Routes, Route} from "react-router-dom";
+import Form from "./components/Form/Form.jsx"
+import Favorites from "./components/Favorites/Favorites.jsx";
+import { useState, useEffect } from 'react';
+import {Routes, Route, useNavigate} from "react-router-dom";
 import style from "./App.css"
+
+
 function App() {
 
    const [characters, setCharacters] = useState([])
+
+   const [access, setAccess] = useState(false)
+   const EMAIL = 'lucascythe@gmail.com';
+   const PASSWORD = 'lucas123';
+
+   const navigate = useNavigate();
+
+   function login(userData) {
+      if (userData.password === PASSWORD && userData.email === EMAIL) {
+         setAccess(true);
+         navigate('/home');
+      }
+   }
+
+   useEffect(() => {
+      !access && navigate('/');
+   }, [access]);
 
    const onSearch = (id) =>{      
       axios(`https://rym2.up.railway.app/api/character/${id}?key=pi-LucaNorDem`).then(         
@@ -32,9 +53,11 @@ function App() {
       <div className='App'>
          <Nav onSearch = {onSearch} />
          <Routes>
+            <Route path ="/" element={<Form  login={login}/>} />
             <Route path ="/home" element={<Cards characters={characters} onClose={onClose}/>}/>
             <Route path ="/about" element={<About />}/>
             <Route path ="/detail/:id" element={<Detail />}/>
+            <Route path ="/favorites" element={<Favorites onClose={onClose}/>}/>
          </Routes>
                   
       </div>

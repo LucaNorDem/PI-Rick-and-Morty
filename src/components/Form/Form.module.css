@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "get_schwifty";
+    src: url(./../../resources/get_schwifty.ttf);
+}
+@font-face {
+    font-family: "comic_neue";
+    src: url(./../../resources/ComicNeue-Regular.ttf);
+}
+
+.fDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.img{
+    width: 500px;
+    margin-bottom: 80px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.label{
+    font-family: "get_schwifty";
+    font-size: 40px;
+    color: #40B5CB;
+    text-shadow: 
+    -1px -1px 0 #B8D740,
+    1px -1px 0 #B8D740,
+    -1px 1px 0 #B8D740,
+    1px 1px 0 #B8D740;
+}
+
+.input{
+    font-size: 35px;  
+    border-radius: 10px;  
+}
+
+.p{
+    font-size: 20px;
+    font-family: "comic_neue";
+    color: rgb(255, 28, 28);
+    text-shadow: none;
+}
+
+.btn{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(25, 25, 25, 0);;
+    background-image: url(./../../resources/RickMortyPortal-fijo.gif);
+    background-size: 200px 50px;    
+    margin: 2px;
+    font-family: "get_schwifty";
+    font-size: 30px;
+    color:#03af00;
+    border: none;
+    cursor: pointer;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+    &:hover{
+        background-image: url(./../../resources/RickMortyPortal.gif);
+    }
+}
