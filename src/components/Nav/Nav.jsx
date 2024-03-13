@@ -24,9 +24,9 @@ export default function Nav ({onSearch}){
             </div>
             
 
-            <div className={styles.searchBar} >
+            {/* <div className={styles.searchBar} >
                 <SearchBar onSearch={onSearch} />
-            </div>
+            </div> */}
         </div>
 
     )

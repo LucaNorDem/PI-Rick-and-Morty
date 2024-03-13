@@ -10,7 +10,7 @@
 
 .SBDiv input{
     margin: 2px;
-    width: 300px;
+    width: 400px;
     border-radius: 10px;
     font-size: 20px;
 }
@@ -18,7 +18,7 @@
 .button{
     width: 100px;
     height: 50px;
-    background-color: rgb(25, 25, 25);;
+    background-color:transparent;
     background-image: url(./../../resources/RickMortyPortal-fijo.gif);
     background-size: 100px 50px;    
     margin: 2px;

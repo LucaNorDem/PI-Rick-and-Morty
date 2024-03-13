@@ -1,7 +1,20 @@
+.CardsContainer{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 100px; */
+    align-items: center;
+}
+
+.searchBar{
+    margin-top: 100px;
+}
+
+
 .CardsDiv {
     display: flex;
+    width: 100%;
     justify-content: space-around; 
     flex-wrap: wrap; 
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
