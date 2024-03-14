@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import SearchBar from "../SearchBar/SearchBar"
 import styles from "./Nav.module.css"
 import { useNavigate, useLocation } from "react-router-dom"

@@ -11,7 +11,7 @@ export default function Cards({characters, onClose, onSearch}) {
    return (
    <div className={styles.CardsContainer}>
       {location.pathname === "/home" ? <div className={styles.searchBar} >
-         <SearchBar onSearch={onSearch} />
+         <SearchBar onSearch={onSearch} characters={characters} />
       </div> : null}      
       <div className={styles.CardsDiv}>
          {characters.map((character)=>{

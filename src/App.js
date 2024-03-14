@@ -51,7 +51,7 @@ function App() {
 
    return (
       <div className='App'>
-         <Nav onSearch = {onSearch} />
+         <Nav />
          <Routes>
             <Route path ="/" element={<Form  login={login}/>} />
             <Route path ="/home" element={<Cards characters={characters} onClose={onClose} onSearch = {onSearch}/>}/>
