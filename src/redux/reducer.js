@@ -24,7 +24,7 @@ const rootReducer = (state = initialState, action) =>{
             {...state, myFavorites: characters.filter((char)=> char.gender === action.payload)}
 
         case ORDER:
-            const orderCharacters = [...state.allCharacters];
+            const orderCharacters = [...state.myFavorites];
             orderCharacters.sort((a, b) =>  action.payload === "A" ? a.id - b.id : b.id - a.id               
             );
             
