@@ -1,0 +1,21 @@
+.FavoritesDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin-top: 110px;
+}
+
+.selectors{
+    display: flex;
+    justify-content: center;
+}
+
+.select{
+    margin: 0px 5px 0px 5px;
+    font-size: 15px;
+}
+
+.cards{
+    margin-top: 10px;
+}
