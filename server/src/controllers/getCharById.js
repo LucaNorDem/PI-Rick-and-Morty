@@ -26,32 +26,34 @@
 const axios = require("axios");
 const URL = "https://rym2.up.railway.app/api/character/${id}?key=LucaNorDem"
 
-const getCharById = (req, res) => {
+const getCharById = async (req, res) => {
+
     const { id } = req.params;
-    console.log(typeof(id));
-    axios(URL.replace("${id}", id))
-        .then((resp) => {
-            let {id,name,gender,species,origin,image,status} = resp.data;
-            const char = {
-                id,
-                name,
-                gender,
-                species,
-                origin,
-                image,
-                status
-            }
-            console.log(char);
+    // console.log(typeof(id));
 
-            return char.name ?
-            res.json(char) :
-            res.status(404).send("Not found");
+    try {
+        const {data} = await axios(URL.replace("${id}", id))
+        const character ={
+            id: data.id,
+            name: data.name,
+            gender: data.gender,
+            species: data.species,
+            origin: data.origin,
+            image: data.image,
+            status: data.status,
+            location: data.location
 
-        })
-        .catch((reason) => {
-            console.log(reason.message);
-            return res.status(500).send(reason.message);
-        })
+        }
+        
+        return character.name ?
+        res.json(character) :
+        res.status(404).send("Not found");
+
+    } catch (error) {
+        return res.status(500).send(error.message);
+        
+    }
+    
 }
 
 
