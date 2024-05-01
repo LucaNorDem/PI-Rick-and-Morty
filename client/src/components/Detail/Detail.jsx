@@ -35,7 +35,7 @@ const Detail =()=>{
             <h2 className={styles.h2info}>Status:&nbsp;<span className={styles.propText}>{character.status}</span></h2>
             <h2 className={styles.h2info}>Specie:&nbsp;<span className={styles.propText}>{character.species}</span></h2>
             <h2 className={styles.h2info}>Gender:&nbsp;<span className={styles.propText}>{character.gender}</span></h2>
-            <h2 className={styles.h2info}>Location:<span className={styles.propText}>{character.location?.name}</span></h2>
+            <h2 className={styles.h2info}>Location:&nbsp;<span className={styles.propText}>{character.location?.name}</span></h2>
          </div>
       </div>
    )
