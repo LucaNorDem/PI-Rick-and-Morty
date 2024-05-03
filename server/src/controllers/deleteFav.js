@@ -1,4 +1,4 @@
-const Favorite = require("../DB_connection");
+const { Favorite } = require("../DB_connection");
 
 
 const deleteFav = async(req, res) =>{
@@ -17,7 +17,7 @@ const deleteFav = async(req, res) =>{
         return res.status(200).json(allFavs);
         
     } catch (error) {
-
+        console.log(error.message);
         return res.status(500).json({error: error.message});
         
     }

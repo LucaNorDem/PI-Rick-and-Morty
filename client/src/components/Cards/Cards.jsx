@@ -25,6 +25,7 @@ export default function Cards({characters, onClose, onSearch}) {
                gender={character.gender} 
                origin={character.origin.name} 
                image={character.image} 
+               location={character.location.name}
                onClose={onClose} />
                )
             })}
