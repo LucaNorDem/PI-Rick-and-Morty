@@ -20,7 +20,7 @@ const postfav = async (req, res) =>{
 
         } else {
 
-            return res.status(401).send("Faltan datos");
+            return res.status(401).json({message: "Faltan datos"});
 
         }
 
